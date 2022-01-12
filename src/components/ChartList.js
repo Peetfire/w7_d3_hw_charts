@@ -1,10 +1,11 @@
 import React from "react";
+import SongItem from "./SongItem";
 
 const ChartList = () => {
     return (
         <div className="class-list">
             <ul>
-                I am UList
+                <SongItem/>
             </ul>
         </div>
     )
