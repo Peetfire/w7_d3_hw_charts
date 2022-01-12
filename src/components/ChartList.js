@@ -1,12 +1,19 @@
 import React from "react";
 import SongItem from "./SongItem";
 
-const ChartList = () => {
+const ChartList = ({songs}) => {
+
+    const songItems = songs.map(song => {
+        return(
+            <SongItem title={song['title']['label']} key={song['id']['attributes']['im:id']}/>
+        )
+    })
+
     return (
         <div className="class-list">
-            <ul>
-                <SongItem/>
-            </ul>
+            <ol>
+                {songItems}
+            </ol>
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import React from "react";
 
-const SongItem = () => {
+const SongItem = ({title}) => {
     return (
         <div className="song-item">
-            <li>I am song item</li>
+            <li>{title}</li>
         </div>
     )
 }
